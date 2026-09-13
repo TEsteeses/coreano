@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout Seguro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/checkout.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1640406447506257');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1640406447506257&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<div class="checkout-wrapper">
+  <div class="checkout-container">
+    
+    <div class="checkout-layout">
+      
+      <!-- Coluna Esquerda: Formulário e Bumps -->
+      <div class="checkout-card">
+        
+        <div class="checkout-section">
+          <div class="section-title">
+            <h2>Dados Pessoais</h2>
+          </div>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label>Nome Completo</label>
+              <div class="input-wrapper">
+                <input type="text" placeholder="Digite seu nome completo">
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label>E-mail</label>
+              <div class="input-wrapper">
+                <input type="email" placeholder="Digite seu e-mail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Celular / WhatsApp</label>
+              <div class="input-wrapper">
+                <input type="tel" placeholder="(00) 00000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>CPF / CNPJ</label>
+              <div class="input-wrapper">
+                <input type="text" placeholder="000.000.000-00">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-section border-top">
+          <div class="section-title">
+            <h2>Forma de Pagamento</h2>
+          </div>
+          
+          <div class="payment-tabs">
+            <div class="payment-tab active">
+              <span>💳 Cartão de Crédito</span>
+            </div>
+            <div class="payment-tab">
+              <span>💠 Pix</span>
+            </div>
+          </div>
+
+          <div class="payment-method-fields">
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label>Número do Cartão</label>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="0000 0000 0000 0000" disabled>
+                </div>
+              </div>
+              <div class="expiry-grid full-width">
+                <div class="form-group">
+                  <label>Validade</label>
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="MM/AA" disabled>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>CVV</label>
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="123" disabled>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group full-width">
+                <label>Nome no Cartão</label>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Nome impresso no cartão" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-section border-top">
+          <div class="section-title">
+            <h2>Aproveite também e adicione:</h2>
+          </div>
+          
+          <div class="orderbump-container">
+            
+            <div class="orderbump-card highlight-bump">
+              <div class="orderbump-body">
+                <div class="orderbump-left-col">
+                  <div class="orderbump-checkbox"></div>
+                  <div class="orderbump-brand">
+                    <img src="images/media_1789068140539.jpg" class="ob-brand-img" onerror="this.style.display='none'">
+                  </div>
+                </div>
+                <div class="orderbump-right-col">
+                  <h3 class="orderbump-title">COMBO: LEVE AS 5 OFERTAS POR 1</h3>
+                  <p class="orderbump-desc">Combo com mais de 40% de DESCONTO!</p>
+                  <div class="orderbump-pricing">
+                    <span class="original-price">R$ 37,70</span>
+                    <span class="price-green">R$ 26,30</span>
+                    <button type="button" class="ob-add-btn">Adicionar oferta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="orderbump-card">
+              <div class="orderbump-body">
+                <div class="orderbump-left-col">
+                  <div class="orderbump-checkbox"></div>
+                  <div class="orderbump-brand">
+                    <img src="images/media_1789068140538.jpg" class="ob-brand-img" onerror="this.style.display='none'">
+                  </div>
+                </div>
+                <div class="orderbump-right-col">
+                  <h3 class="orderbump-title">Receber Agora pelo WhatsApp</h3>
+                  <p class="orderbump-desc">Receba os produtos comprados instantaneamente.</p>
+                  <div class="orderbump-pricing">
+                    <span class="final-price">R$ 1,50</span>
+                    <button type="button" class="ob-add-btn">Adicionar oferta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="orderbump-card">
+              <div class="orderbump-body">
+                <div class="orderbump-left-col">
+                  <div class="orderbump-checkbox"></div>
+                  <div class="orderbump-brand">
+                    <img src="images/media_1789068140542.png" class="ob-brand-img" onerror="this.style.display='none'">
+                  </div>
+                </div>
+                <div class="orderbump-right-col">
+                  <h3 class="orderbump-title">Acesso Vitalício</h3>
+                  <p class="orderbump-desc">Receba o acesso vitalício e use para sempre.</p>
+                  <div class="orderbump-pricing">
+                    <span class="final-price">R$ 1,50</span>
+                    <button type="button" class="ob-add-btn">Adicionar oferta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="orderbump-card">
+              <div class="orderbump-body">
+                <div class="orderbump-left-col">
+                  <div class="orderbump-checkbox"></div>
+                  <div class="orderbump-brand">
+                    <img src="images/media_1789068140613.jpg" class="ob-brand-img" onerror="this.style.display='none'">
+                  </div>
+                </div>
+                <div class="orderbump-right-col">
+                  <h3 class="orderbump-title">FlashCards - Coreano Descomplicado</h3>
+                  <p class="orderbump-desc">Cumprimentos, Palavras, Pronomes e Família!</p>
+                  <div class="orderbump-pricing">
+                    <span class="final-price">R$ 9,90</span>
+                    <button type="button" class="ob-add-btn">Adicionar oferta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna Direita: Resumo -->
+      <div class="checkout-right">
+        <div class="summary-card">
+          <div class="summary-header">
+            <h2>Resumo da compra</h2>
+          </div>
+          
+          <div class="product-preview">
+            <div class="product-image-container">
+              <img src="images/media_1789067989351.jpg" alt="Capa" onerror="this.src='images/premium-cover.png'">
+            </div>
+            <div class="product-info">
+              <h3>Coreano Descomplicado</h3>
+              <p>+100 Mapas Mentais + 4 Bônus Exclusivos</p>
+            </div>
+          </div>
+
+          <div class="price-breakdown">
+            <div class="price-row" style="width: 100%; display: flex; justify-content: space-between;">
+              <span>Total</span>
+              <span class="highlight-green">R$ 17,90</span>
+            </div>
+          </div>
+
+          <a href="https://pay.wiapy.com/YXEbUN7_8Azu" class="btn-submit" style="display: block; text-align: center; text-decoration: none;">
+            FINALIZAR COMPRA
+          </a>
+          
+          <div class="checkout-footer">
+            <div class="security-badge">
+              <span>🔒 Ambiente Seguro e Criptografado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  // Script para Order Bumps interativos
+  document.querySelectorAll('.orderbump-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-selected');
+      const checkbox = card.querySelector('.orderbump-checkbox');
+      if(checkbox) checkbox.classList.toggle('is-checked');
+    });
+  });
+</script>
+
+<script>
+  window.onload = function() {
+    const btn = document.querySelector('.btn-submit');
+    if (btn && window.location.search) {
+      try {
+        const url = new URL(btn.href);
+        const params = new URLSearchParams(window.location.search);
+        for (const [key, value] of params) {
+          url.searchParams.set(key, value);
+        }
+        btn.href = url.toString();
+      } catch (e) {}
+    }
+  };
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 :root {
   --bg-color: #fff7f7;
   --card-bg: #fbf2f3;
-  --text-main: #011639;
+  --text-main: #000000;
   --text-muted: #64748b;
   --text-soft: #94a3b8;
   --text-muted-strong: #475569;
@@ -71,7 +71,7 @@ body {
   margin: 0;
   color: var(--text-main);
   font-size: 1.05rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* Formulário */
@@ -141,7 +141,7 @@ body {
   border-color: var(--text-main);
   color: var(--text-main);
 }
-.payment-tab span { font-size: 0.85rem; font-weight: 800; }
+.payment-tab span { font-size: 0.85rem; font-weight: 700; }
 
 /* Order Bumps Wiapy */
 .orderbump-container {
@@ -150,7 +150,7 @@ body {
 .orderbump-card {
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  background: var(--card-bg);
+  background: #ffffff;
   padding: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -162,7 +162,10 @@ body {
   box-shadow: 0 4px 12px rgba(21, 195, 107, 0.08);
 }
 .orderbump-card.highlight-bump {
-  border-color: #f7d27e; background: #fffbef;
+  border-color: var(--accent-green); background: #ffffff;
+}
+.orderbump-card.is-selected .ob-add-btn {
+  background: #01183A;
 }
 
 .orderbump-body {
@@ -194,21 +197,37 @@ body {
 .orderbump-right-col {
   display: flex; flex-direction: column; gap: 4px; flex: 1;
 }
-.orderbump-title { margin: 0; font-size: 0.9rem; font-weight: 800; color: #0047A0; }
-.orderbump-desc { margin: 0; font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+.orderbump-title { margin: 0; font-size: 16px; font-weight: 600; color: #02193C; }
+.orderbump-desc { margin: 0; font-size: 14px; color: #64748B; font-weight: 400; line-height: 1.4; }
 .orderbump-pricing {
   display: flex; align-items: center; gap: 8px; font-size: 0.8rem;
 }
 .original-price { color: var(--error-color); text-decoration: line-through; font-weight: 500; }
-.price-green { color: var(--accent-green-text); font-weight: 800; }
+.price-green { color: var(--accent-green-text); font-weight: 700; }
 .final-price { color: var(--text-main); font-weight: 700; }
+
+.ob-add-btn {
+  background: #A92043;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: auto;
+  transition: opacity 0.2s, background 0.2s;
+}
+.ob-add-btn:hover {
+  opacity: 0.9;
+}
 
 /* Resumo da Compra Direita */
 .checkout-right { position: sticky; top: 10px; }
 .summary-header {
   padding-bottom: 14px; border-bottom: 1px solid var(--border-light); margin-bottom: 20px;
 }
-.summary-header h2 { font-size: 0.92rem; font-weight: 800; margin: 0; }
+.summary-header h2 { font-size: 0.92rem; font-weight: 700; margin: 0; }
 
 .product-preview {
   display: flex; gap: 16px; align-items: center; margin-bottom: 20px;
@@ -217,20 +236,20 @@ body {
   width: 80px; height: 80px; border-radius: 10px; overflow: hidden; flex-shrink: 0;
 }
 .product-image-container img { width: 100%; height: 100%; object-fit: cover; }
-.product-info h3 { font-size: 0.92rem; font-weight: 800; margin: 0 0 4px; }
+.product-info h3 { font-size: 0.92rem; font-weight: 700; margin: 0 0 4px; }
 .product-info p { font-size: 0.8rem; color: var(--text-muted-strong); margin: 0; }
 
 .price-breakdown {
   border-top: 1px solid var(--border-light); padding-top: 16px; margin-bottom: 24px;
 }
 .price-row { font-size: 0.85rem; font-weight: 700; }
-.highlight-green { color: var(--accent-green-text); font-size: 1.05rem; font-weight: 800; }
+.highlight-green { color: var(--accent-green-text); font-size: 1.05rem; font-weight: 700; }
 
 .btn-submit {
   width: 100%; height: 50px;
   background: var(--accent-green-button); color: #fff;
   border-radius: 25px;
-  font-size: 0.95rem; font-weight: 800;
+  font-size: 0.95rem; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
